@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+  
+
+  
+    .custom-dropdown-menu {
+            width: 900px; /* Maximum width for larger screens */
+        }
+        @media (max-width: 600px) {
+            /* CSS rules for small mobile screens */
+            .custom-dropdown-menu {
+               width: 100%;
+            }
+            .navbar-nav > .nav-item{
+              margin-left: 25px;
+              margin-right: 25px;
+}
+        }
+        .dropdown-menu{
+            animation: .5s slideup;
+        }
+        @keyframes slideup{
+            from{
+                transform: translate(10%);
+            }
+            to{
+                transform: translate(0%);
+            }
+        }
+
+        /* Styles for screens from 601px to 991px width (medium mobile and tablet screens) */
+        @media (min-width: 601px) and (max-width: 991px) {
+            /* CSS rules for medium mobile and tablet screens */
+            .custom-dropdown-menu {
+                width: 100%;
+            }
+        }
+
+     
+    
+    
+    .nav-link{
+       
+        position: relative;
+        font-size: 25px;
+        color: white;
+        margin: 0 auto;
+        padding : 0 10px 0 10px;
+    }
+    .nav-item:hover{
+       
+        color: rgb(250, 244, 244);
+      
+    }
+    .nav-link::after{
+        content: '';
+        opacity: 0;
+        transition: all 0.2s;
+        height: 2px;
+        width: 100%;
+        background-color: rgb(57, 38, 231);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .nav-link:hover::after{
+        opacity: 1;
+    }
+    .dropdown:hover .dropdown-menu{
+        display: block;
+        background: #fff;
+    }
+    .dropdown-item:hover{
+           background: rgb(53, 21, 233);
+           color: white;
+    }
+    .navbar-nav > .nav-item{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+    </style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger shadow py-4 fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse me-3" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                         Company
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="about.html">About US</a></li>
+                            <li><a class="dropdown-item" href="work.html">How we Work</a></li>
+                            <li><a class="dropdown-item" href="#">Portfolio</a></li>
+                            <li><a class="dropdown-item" href="quality.html">Quality Management</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu shadow border-0 custom-dropdown-menu">
+                            <div class="container text-center">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6 col-md-4">
+                                        <h4 style="font-size: 20px;">Software Development</h4>
+                                        <hr>
+                                        <li><a class="dropdown-item" href="webdevelop.html">website Development</a></li>
+                                        <li><a class="dropdown-item" href="softdevelop.html">Software Development</a></li>
+                                        <li><a class="dropdown-item" href="ecodevelop.html">E-commerce Development</a></li>
+                                        <li><a class="dropdown-item" href="appdevelop.html">App Development</a></li>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-4">
+                                        <h4>Consulting</h4>
+                                        <hr>
+                                        <li><a class="dropdown-item" href="erp.html"> ERP Solution</a></li>
+                                        <li><a class="dropdown-item" href="cloud.html">Cloud/VM Service</a></li>
+                                        <li><a class="dropdown-item" href="#">POS Software</a></li>
+                                        <li><a class="dropdown-item" href="#">Hospital Management</a></li>
+                                        <li><a class="dropdown-item" href="#">Education Management</a></li>
+
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-4">
+                                        <h4>Advaisory</h4>
+                                        <hr>
+                                        <li><a class="dropdown-item" href="digital.html">Digital Marketing</a></li>
+                                        <li><a class="dropdown-item" href="cloud.html">Cloud Service</a></li>
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="technology.html">Technologies</a>
+                    </li>
+                    <li class="nav-item dropdown me-2">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                         Consulting
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="erp.html"> ERP Solution</a></li>
+                                        <li><a class="dropdown-item" href="cloud.html">Cloud/VM Service</a></li>
+                                        <li><a class="dropdown-item" href="#">POS Software</a></li>
+                                        <li><a class="dropdown-item" href="#">Hospital Management</a></li>
+                                        <li><a class="dropdown-item" href="#">Education Management</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown me-2">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                         Client
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="client.html">Our Clients</a></li>
+                            <li><a class="dropdown-item" href="navbar.html">Case Studies</a></li>
+                 
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown me-2">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                         Contact
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="contact.html">Contacts Sale</a></li>
+                            <li><a class="dropdown-item" href="support.html">Support</a></li>
+  
+                        </ul>
+                    </li>
+               
+                   
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!--landing page-->
+<section class="landing bg-dark text-light p-5 text-center text-sm-start ">
+<div class="container">
+    <div class="d-sm-flex align-items-center justify-content-between py-5">
+     <div>
+        <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta reprehenderit sapiente inventore.</h1>
+        <h3 class="my-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, repellendus.</h3>
+        <p class="lead my-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, modi. Est, minus.</p>
+        <button class="btn btn-primary">contact</button>
+     </div>
+     <a href="#">
+        <img src="image/banner1-removebg-preview.png" class="img-fluid" width="1000" alt="">
+     </a>
+    </div>
+</div>
+</section>
+
+</body>
+
+</html>

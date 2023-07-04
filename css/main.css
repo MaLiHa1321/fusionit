@@ -1,0 +1,16 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@300&display=swap');
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.banner img{
+    position: relative;
+    min-height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 250px 0 200px;
+
+}

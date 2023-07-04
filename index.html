@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fusion It solution</title>
+    <link rel="stylesheet" href="css/style.css">
+     <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   
+    <!--bootstrap icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+<style>
+    .dropdown-item:hover{
+   background: rgb(9, 133, 56);
+   color: white;
+}
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-success shadow py-4 fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse me-3" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                         Company
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="about.html"><i class="bi bi-caret-right custom-icon-size"></i>About US</a></li>
+                            <li><a class="dropdown-item" href="work.html"><i class="bi bi-caret-right custom-icon-size"></i>How we Work</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-caret-right custom-icon-size"></i>Portfolio</a></li>
+                            <li><a class="dropdown-item" href="quality.html"><i class="bi bi-caret-right custom-icon-size"></i>Quality Management</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu shadow border-0 custom-dropdown-menu">
+                            <div class="container text-center">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6 col-md-4">
+                                        <h4 style="font-size: 20px;">Software Development</h4>
+                                        <hr>
+                                        <li><a class="dropdown-item" href="webdevelop.html"><i class="bi bi-chevron-right "></i>website Development</a></li>
+                                        <li><a class="dropdown-item" href="softdevelop.html"><i class="bi bi-chevron-right "></i>Software Development</a></li>
+                                        <li><a class="dropdown-item" href="ecodevelop.html"><i class="bi bi-chevron-right "></i>E-commerce Development</a></li>
+                                        <li><a class="dropdown-item" href="appdevelop.html"><i class="bi bi-chevron-right"></i>App Development</a></li>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-4">
+                                        <h4>Consulting</h4>
+                                        <hr>
+                                        <li><a class="dropdown-item" href="erp.html"><i class="bi bi-chevron-right"></i> ERP Solution</a></li>
+                                        <li><a class="dropdown-item" href="cloud.html"><i class="bi bi-chevron-right "></i>Cloud/VM Service</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="bi bi-chevron-right"></i>POS Software</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="bi bi-chevron-right"></i>Hospital Management</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="bi bi-chevron-right"></i>Education Management</a></li>
+
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-4">
+                                        <h4>Advaisory</h4>
+                                        <hr>
+                                        <li><a class="dropdown-item" href="digital.html"><i class="bi bi-chevron-right"></i>Digital Marketing</a></li>
+                                        <li><a class="dropdown-item" href="cloud.html"><i class="bi bi-chevron-right"></i>Cloud Service</a></li>
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="technology.html">Technologies</a>
+                    </li>
+                    <li class="nav-item dropdown me-2">
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                         Consulting
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="erp.html"> <i class="bi bi-caret-right custom-icon-size"></i>ERP Solution</a></li>
+                                        <li><a class="dropdown-item" href="cloud.html"><i class="bi bi-caret-right custom-icon-size"></i>Cloud/VM Service</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="bi bi-caret-right custom-icon-size"></i>POS Software</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="bi bi-caret-right custom-icon-size"></i>Hospital Management</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="bi bi-caret-right custom-icon-size"></i>Education Management</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown me-2">
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                         Client
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="client.html"><i class="bi bi-caret-right custom-icon-size"></i>Our Clients</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-caret-right custom-icon-size"></i>Case Studies</a></li>
+                 
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown me-2">
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                         Contact
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="contact.html"><i class="bi bi-caret-right custom-icon-size"></i>Contacts Sale</a></li>
+                            <li><a class="dropdown-item" href="support.html"><i class="bi bi-caret-right custom-icon-size"></i>Support</a></li>
+  
+                        </ul>
+                    </li>
+               
+                   
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--carruosel-->
+    <section class="slider">
+   
+    <div class="container-fluid min-vh-50 mt-5 py-5" style="margin-top: 20px;">
+            <div class="row h-20">
+                <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner rounded border-light">
+                        <div class="carousel-item active">
+
+                            <img src="image/slider3.jpg" class="d-block w-100 vh-100 " alt="...">
+                            <div class="carousel-caption">
+                               <!-- <h5>Software Development Company</h5>
+                                <p>We provide custom software development and IT outsourcing services. <br>
+                                     Our developers build custom software for individuals, startups, and small to medium business.</p>
+                                <button type="button" class="btn btn-danger rounded-pill">Learn More</button>-->
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="image/slider1.jpg" class="d-block w-100 vh-100" alt="...">
+                            <div class="carousel-caption">
+                               <!-- <h5>Software Development Company</h5>
+                                <p>We provide custom software development and IT outsourcing services. <br>
+                                     Our developers build custom software for individuals, startups, and small to medium business.</p>
+                                <button type="button" class="btn btn-danger rounded-pill">Learn More</button>-->
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image/slider2.jpg" class="d-block w-100 vh-100" alt="...">
+                            <div class="carousel-caption">
+                                <!--<h5>Software Development Company</h5>
+                                <p>We provide custom software development and IT outsourcing services. <br>
+                                     Our developers build custom software for individuals, startups, and small to medium business.</p>
+                              <button type="button" class="btn btn-danger rounded-pill">Learn More</button>-->  
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </div>
+    </section>
+
+    <!--Service Section-->
+
+    <section class="services">
+        <div class="container">
+            <div class="heading">
+                <h2>Our Services</h2>
+                <p>We provide all services ever need for your online business</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-11 d-flex align-item-center mb-5">
+                    <div class="icon_box one">
+                        <div class="icon"><i class="fas fa-desktop"></i></div>
+                        <h4 class="title">Custom Software Development</h4>
+                        <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati ipsam
+                            amet sed eum, nihil hic laborum consequuntur sunt debitis dignissimos similique eligendi
+                            veritatis reiciendis, ea, dolorum ex quo. Est quidem a tempora in minus unde blanditiis
+                            deserunt ex autem consequatur porro, exercitationem id modi aliquam perferendis error
+                            recusandae nostrum perspiciatis?</p>
+                        <a href="#" class="btn-area">Read More <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-11 d-flex align-item-center mb-5">
+                    <div class="icon_box two">
+                        <div class="icon"><i class="bx bxs-devices"></i></div>
+                        <h4 class="title">Cloud Migration</h4>
+                        <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati ipsam
+                            amet sed eum, nihil hic laborum consequuntur sunt debitis dignissimos similique eligendi
+                            veritatis reiciendis, ea, dolorum ex quo. Est quidem a tempora in minus unde blanditiis
+                            deserunt ex autem consequatur porro, exercitationem id modi aliquam perferendis error
+                            recusandae nostrum perspiciatis?</p>
+                        <a href="#" class="btn-area">Read More <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-11 d-flex align-item-center mb-5">
+                    <div class="icon_box three">
+                        <div class="icon"><i class="fas fa-broom"></i></div>
+                        <h4 class="title">Software Testing</h4>
+                        <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati ipsam
+                            amet sed eum, nihil hic laborum consequuntur sunt debitis dignissimos similique eligendi
+                            veritatis reiciendis, ea, dolorum ex quo. Est quidem a tempora in minus unde blanditiis
+                            deserunt ex autem consequatur porro, exercitationem id modi aliquam perferendis error
+                            recusandae nostrum perspiciatis?</p>
+                        <a href="#" class="btn-area">Read More <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--technology we use-->
+
+    <section class="technology">
+        <div class="container">
+            <div class="heading">
+                <h2>Technologies And Tools We Use</h2>
+                <p>Eastern European engineering school is technically strong, so developers of full-cycle software
+                    development company Fusion It Solution are well versed in the latest techniques and methods, pay
+                    constant attention to industry standards and best practices for software development</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-5 col-11 d-flex align-item-center ml-3 mb-5">
+                    <div class="card shadow" style="width: 20rem;">
+                        <div class="inner">
+                            <img src="image/php.png" class="card-img-top" alt="php">
+                        </div>
+
+                        <div class="card-body text-center">
+                            <h5 class="card-title">PHP Development</h5>
+
+                            <a href="#" class="btn btn-success ">Learn More....</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-5 col-11 d-flex align-item-center mb-5">
+                    <div class="card shadow" style="width: 20rem;">
+                        <div class="inner">
+                            <img src="image/php.png" class="card-img-top" alt="net">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">.NET Development</h5>
+
+                            <a href="#" class="btn btn-success ">Learn More...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-5 col-11 d-flex align-item-center mb-5">
+                    <div class="card shadow" style="width: 20rem;">
+                        <div class="inner">
+                            <img src="image/php.png" class="card-img-top" alt="python">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Python Development</h5>
+
+                            <a href="#" class="btn btn-success ">Learn More....</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-5 col-11 d-flex align-item-center mb-5">
+                    <div class="card shadow" style="width: 20rem;">
+                        <div class="inner">
+                            <img src="image/php.png" class="card-img-top" alt="api">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">API Development</h5>
+
+                            <a href="#" class="btn btn-success ">Learn More...</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-5 col-11 d-flex align-item-center mb-5">
+                    <div class="card shadow" style="width: 20rem;">
+                        <div class="inner">
+                            <img src="image/slider1.jpg" class="card-img-top" alt="slide">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Database Development</h5>
+
+                            <a href="#" class="btn btn-success ">Learn More....</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-5 col-11 d-flex align-item-center mb-5">
+                    <div class="card shadow" style="width: 20rem;">
+                        <div class="inner">
+                            <img src="image/php.png" class="card-img-top" alt="react">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">React Native</h5>
+
+                            <a href="#" class="btn btn-success ">Learn More.....</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Marketing & software-->
+    <section id="hero-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-lg-6 col-11">
+                    <div class="copy">
+                        <div class="text-label">
+                            Marketing and Software Development for the Future!
+                        </div>
+                        <div class="text-hero-regular">
+                            “Build it and they will come” just doesn’t cut it anymore. To reach the right people at the
+                            right time with the right product requires a software development and digital marketing
+                            company with experience.
+                        </div>
+                        <div class="col-md-6 col-lg-5 col-11 my-4">
+                            <a href="#" class="btn btn-danger rounded-pill mx-auto">Explore More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-lg-4 col-11">
+                    <img src="image/banner1-removebg-preview.png" class="img-fluid mr-2" alt="img"
+                        style="width: 500px; height: 400px; margin-top: 20px;">
+                </div>
+            </div>
+        </div>
+        <div class="row mt-md-5 px-5">
+            <div class="col-md-6 mt-3 ml-3">
+                <div class="icon max-auto"><i class="fas fa-desktop"></i></div>
+                <h2 class="font-weight-bold">Software Development</h2>
+                <p class="mt-4 text">Visually engaging software solutions for any industry, designed to solve business
+                    challenges and revolutionize the market.</p>
+                <p class="mt-3 text">Custom Web Development Services <br>
+
+                    <span>* Specialized web apps, websites, and responsive design</span> <br>
+
+                    * Mobile App Development Services <br>
+
+                    *Native mobile development, scalable cloud backends, cross platform mobile app development services,
+                    high-quality graphics, and animation
+                    <br>
+                    *Desktop Application Development Services
+                    <br>
+                    *Cross-platform applications for Windows, Mac, and Linux, and Javascript-based desktop applications
+                </p>
+            </div>
+            <div class="col-md-6 mt-3 ">
+                <div class="icon"><i class="fas fa-mobile"></i></div>
+                <h2 class="font-weight-bold">Marketing</h2>
+                <p class="mt-4 text">Disruptive digital marketing strategies to skyrocket your brand’s visibility and
+                    build meaningful relationships with your future customers.</p>
+                <p class="mt-3 text">As a full service digital marketing agency, we implement Disruptive digital
+                    marketing strategies to skyrocket your brand’s visibility and build meaningful relationships with
+                    your future customers. <br>
+
+                    Digital Marketing Services
+                    <br>
+
+                    * Strategic marketing and research, Search Engine Optimization Services, PPC, copywriting, social
+                    media, email marketing, and, content and video marketing
+                    <br>
+                    * UI UX Design Services
+                    <br>
+                    * UX, UI, web app, desktop software, cross-platform and mobile-friendly design for both Android and
+                    iOS
+                    <br>
+                    * Consulting Services
+                    <br>
+                    * Strategic consultation for software development and digital marketing.
+                </p>
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+    <!--Contact section-->
+    <section class="jumbot mt-5">
+        <div class="container">
+            <div class="bg-secondary text-white p-5 my-3">
+                <h2 class="text-center">Want To Develop A Custom Software Solution?</h2>
+                <br><br>
+                <div class="button-container">
+                    <button class="center-button text-white"> <a href="#"></a>
+                        Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Advantage section-->
+
+    <div class="conatiner advantage text-center my-5">
+        <div class="heading">
+            <h2 class="py-5">Our Advantage</h2>
+            <div class="row py-5">
+                <div class="col-md-6 item">
+                    <i class='bx bx-dollar-circle'></i>
+                    <h3 class="text-weight-bold">High value for money</h3>
+                    <br class="text-muted py-1">Software development service provider Fusion It Solution </br>hires
+                    highly qualified and educated IT experts.</p>
+                </div>
+                <div class="col-md-6 item">
+                    <i class='bx bx-import'></i>
+                    <h3 class="text-weight-bold">Low attrition rate</h3>
+                    <br class="text-muted py-1">Personnel turnover rate in Fusion It Solution is below 12% per annum.
+                    <br> The risk of losing key people on your projects is low,
+                    <br> and thus we provide knowledge in your projects and save your money!</p>
+                </div>
+                <div class="col-md-6 item">
+                    <i class='bx bx-walk'></i>
+                    <h3 class="text-weight-bold">Easy to work with</h3>
+                    <br class="text-muted py-1">Fusion It Solution is relatively small and flexible, <br> and our
+                    management is open to new ideas. <br> We provide maximum transparency of a working process, <br>
+                    project team management, and pricing.</p>
+                </div>
+                <div class="col-md-6 item">
+                    <i class='bx bx-bar-chart'></i>
+                    <h3 class="text-weight-bold">Advanced</h3>
+                    <br class="text-muted py-1">Reaching new horizons is our motto and one of our company values. <br>
+                    Fusion It Solution software developing company continues evolving in many ways to <br> make our
+                    services more beneficial and useful for you.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Development cycle-->
+    <section id="hero-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="copy">
+                        <h2 class="text-center text-label">
+                            Our development approach and methodology
+                        </h2>
+                        <div class="text-hero-regular">
+                            Our specialists are more concerned about delivering a usable product, than focusing only on
+                            technical aspects. <br>
+                            We will take a more active approach in understanding of your business challenges and
+                            industry. <br>
+                            We understand that your business or your market can shift, <br> so we welcome changes to the
+                            project requirements, even if they occur at a late stage of development. <br>
+                            Depending on the project goals, we can choose an Iterative method, <br> Flexible development
+                            techniques / Agile, Waterfall, Rational Unified Process (RUP).
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <img src="image/development1.png" class="img-fluid mr-2" alt="img"
+                        style="width: 500px; height: 400px; margin-top: 20px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--FAQ section-->
+    <section class="technology">
+        <div class="container my-5">
+
+            <h2 class="text-center faq">FAQ</h2>
+            <div class="row flex-center">
+                <div class="col-md-7 my-5">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <div class="cicle-icon">
+                                        <i class="bx bx-question"></i>
+                                    </div>
+                                    <h4>What is Software Development?</h4>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="text-muted">Software development is the conceiving, specifying, designing,
+                                        programming, documenting, testing, and bug fixing involved in creating and
+                                        maintaining applications, frameworks, and other software components. Software
+                                        development is a process of writing and maintaining the source code, however, it
+                                        incorporates everything from the origination of the ideal programming to the
+                                        last appearance of the product, occasionally in an organized process. Software
+                                        development may include research, new development, prototyping, modification,
+                                        reuse, re-engineering, maintenance, and any other exercises that result in
+                                        programming items.
+                                        <br> <br>
+
+                                        Software can be produced for a variety of purposes, the three most basic being
+                                        to address explicit issues for a particular customer/business (e.g., custom
+                                        software), to meet an apparent need for potential clients (e.g., commercial and
+                                        open-source software), or for individual use (e.g., a researcher may compose
+                                        programming to computerize an everyday undertaking). Embedded software
+                                        development, which is utilized to control consumer products, requires the
+                                        development procedure to be integrated with the development of the controlled
+                                        physical item.
+                                        <br><br>
+                                        The need for better quality control of the software development process has
+                                        given rise to the software engineering discipline, which applies the systematic
+                                        approach of the engineering paradigm to the process of software development.
+                                        <br><br>
+                                        There are numerous ways to deal with software programming management, including
+                                        software development life cycle models, philosophies, or procedures. A cascade
+                                        model is a customary form, notable among the latest innovations of Agile
+                                        software development.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <h4>How to Choose a Custom Software Development Company?</h4>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="text-muted">Below are some tips on how to choose a software development
+                                        company that will be a perfect match for you!
+                                        <br>
+                                        These are the key issues to consider before you hire a software development
+                                        company, based on our company’s experience.
+                                        <br>
+                                        *Define your objectives, resources, and timeframe.
+                                        <br>
+                                        *Get referrals from people. <br>
+                                        * Look at the company’s portfolio. <br>
+                                        * Consider the size of your software project and be aware that many custom
+                                        software development companies primarily work with projects of a particular size
+                                        (e.g., multi-year or multi-enterprise projects).
+                                        <br>
+                                        * Check out the company’s technology stack. <br>
+                                        * Consider these questions: <br>
+                                        * Do you spot innovative technologies? *
+                                        * What do you think of the app designs? Do they provide you with a satisfying
+                                        user experience?
+                                        <br>
+                                        * Does the company openly share its approach or development processes for a
+                                        particular target audience?
+                                        <br>
+                                        * Does the company have experience with software that is in any way similar to
+                                        yours?
+                                        <br>
+                                        * Find out if you will be provided continuous support and maintenance for your
+                                        app.
+                                        <br>
+                                        * Consider the geographical location. <br>
+                                        * Emphasize good communication skills. <br>
+                                        Clarify the company’s application ownership policy.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <h4>What is Agile Software Development?</h4>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="text-muted">Agile software development involves different ways of dealing
+                                        with software development in which requirements and solutions evolve through the
+                                        collaborative efforts of self-organizing and cross-functional teams and their
+                                        customer(s) or end user(s). It includes adaptive planning, cutting-edge
+                                        development, early delivery, and further maintenance, and it encourages rapid
+                                        and flexible reactions to any changes. <br>
+
+                                        The qualities and standards espoused in this manifesto were derived from and
+                                        underpin a broad range of software development frameworks, including Scrum and
+                                        Kanban.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <h4>What is the Software Development Life Cycle (SDLC)?</h4>
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="text-muted">The software development life cycle (SDLC) defines tasks that
+                                        are performed at each stage in the software development process. The SDLC is a
+                                        structure followed by a development team within a software company.
+                                        <br><br>
+                                        <strong>Planning: </strong>The most important stages of software
+                                        development—requirement gathering or requirement analysis—are usually completed
+                                        by the most skilled and experienced software engineers in the organization. Once
+                                        all the requirements have been gathered from the stakeholders, the next step is
+                                        to determine the scope of the project and create a scope document.
+                                        <br><br>
+                                        <strong>Implementation:</strong>
+                                        The software engineers start coding according to the client's requirements. <br>
+                                        <strong>Testing:</strong> This step helps reveal defects or bugs in the created
+                                        software.
+                                        <br> <br>
+                                        <strong> Documentation:</strong> Every project has its own documentation for
+                                        every step and future reference. This helps a lot with improvements in the
+                                        development process. The design documentation may include the described
+                                        interface in a written form (API).
+                                        <br> <br>
+                                        <strong> Deployment:</strong>After it is approved, the software is released.
+                                        <br> <br>
+                                        <strong> Maintaining:</strong> Software maintenance is done for future
+                                        reference. Software upgrades or changes can take longer than the creation of the
+                                        initial software variant.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    <h4>How Much Does Custom Software Development Cost?</h4>
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="text-muted">The price range is very broad and there are numerous aspects
+                                        that contribute to the costs of custom software development.
+                                        <br>
+                                        What Impacts the Cost of Custom Software?
+                                        <br>
+                                        Consider the following factors when determining the costs of and creating a
+                                        budget for custom software development.
+                                        <br><br>
+                                        <strong> Software Size: </strong>The more screens or pages an app has, the more
+                                        work needs to be done to create an application, and the more expensive it will
+                                        be to deliver. Small applications range from 10–25 screens, medium applications
+                                        range from 25–40, and large applications include anything with more than 40
+                                        screens or pages.
+                                        <br><br>
+                                        <strong>Software Complexity: </strong>
+                                        Complicated logic takes more time to code and test. If a custom software
+                                        application performs a lot of heavy analysis, scoring, or number crunching, or
+                                        if a code has a lot of nuances and permutations, this complexity will require
+                                        more focus and could increase the cost.
+                                        <br>
+                                        <strong> Creative Design:</strong> Creative design in custom software
+                                        development is where a customer gets to choose different fonts and color
+                                        palettes, among other things. Much like when someone is designing and decorating
+                                        a house, the more extravagant the design needs and wants, the more expensive the
+                                        costs tend to be.
+                                        <br> <br>
+                                        <strong> Integration With Other Systems: </strong> Integrating with other
+                                        systems introduces a lot of unknown variables into the final cost. Sometimes the
+                                        integrations are effortless, but sometimes they are extremely difficult. Typical
+                                        integrations, such as popular payment providers or credit check services, are
+                                        easy to integrate. However, older or lesser-known systems may pose a challenge
+                                        and increase the project cost and duration.
+                                        <br> <br>
+                                        <strong> Migration of Existing Data:</strong>If you have data in an existing
+                                        system that needs to be moved into a new application, assuming it is more than
+                                        someone can feasibly type in by hand, then it will require migration. Migration
+                                        is nothing more than custom scripts that take data out of an old system, dust it
+                                        off, and reshape it so it can fit into the new system. The steps of this process
+                                        are fairly straight-forward, but there are a lot of questions and decisions that
+                                        need to be made since the two systems will store the data differently. Migration
+                                        is run a few times after the software is completed to make sure everything has
+                                        been translated correctly and the new system is using the data as desired. The
+                                        time spent on figuring out the translation rules, writing the scripts, and
+                                        performing tests and adjustments will add to the project duration and costs.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    <h4>How Long Does It Take to Build a Custom Software?</h4>
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="text-muted">On average, software development time can vary from 3 to 9
+                                        months, depending on the complexity of the software and the structure of your
+                                        project. Each stage of software development process takes different amounts of
+                                        time, but the most time-consuming parts are:
+                                        <br>
+                                        <strong>Requirements gathering: </strong> 2-4 months
+
+                                        <br> <br>
+                                        <strong>Design: </strong> 6-12 weeks
+                                        <br>
+                                        <strong>Development and prototyping: </strong> 2-6 months
+                                        <br>
+                                        <strong>Testing: </strong> 3-6 weeks
+                                        <br>
+                                        <strong>Submission to App Store or Google Play: </strong> up to 2 weeks
+                                        <br> <br>
+                                        For instance, a well-designed landing page can be developed in 1-2 months. But
+                                        if we’re talking about a full-fledged platform, such as an enterprise social
+                                        network, then the timeline will range from 6 to 7 months.
+
+
+                                        <br>
+                                        It’s the same with game development — a visual novel game like Romance Club will
+                                        take up to 2 months. However, a poker game application takes an average of 6
+                                        months.
+
+                                        <br> <br>
+                                        Basic mobile app development takes 2-3 months. Moderate — 4-6 months. Complex —
+                                        6-9 months or even more.
+
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="col-md-5">
+                    <img src="image/faq.jpg" class="img-fluid mr-2" alt="img"
+                        style="width: 500px; height: 400px; margin-top: 20px;">
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+    </section>
+
+    <!--Client feedback section-->
+   <!--<section id="feedback">
+        <div id="client" class="feed">
+            <div class="container">
+                <div class="testi">
+                    <div class="head1">
+                        <h3>Our Client Feedback</h3>
+                        <p>See What Our client Saying</p>
+                    </div>
+                    <div class="body swiper">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <div class="wrapper1">
+                                    <div class="thumbnail1">
+                                        <img src="image/api.png" alt="">
+                                    </div>
+                                    <div class="aside">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                                            Ratione qui odio eos sed laudantium consectetur aliquam in omnis cupiditate
+                                            fugit!</p>
+                                        <div class="name">
+                                            <h4> Sara khan</h4>
+                                            <p>Web Developer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+
+                         If we need navigation buttons 
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>--> 
+
+    <!--Contact Us page-->
+    <section class="contact">
+        <div class="container py-1">
+            <div class="row">
+                <div class="col-md-7">
+                    <h4>Get In Touch</h4>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Name</label>
+                        <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your Name">
+                      </div>
+                      <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="abc23445@gmail.com">
+                    </div>
+                    <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Contact No</label>
+                    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your Number">
+                  </div>
+                  <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Country Name</label>
+                  <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your Country name">
+                </div>
+                <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="I would like to discuss..."></textarea>
+                 </div>
+                 <button class="btn btn-primary rounded-pill mx-auto">Send Message</button>
+                 </div> 
+               
+                <div class="col-md-5">
+                   <h4>Contact Us</h4> <hr> 
+                   <div class="mt-5">
+                    <div class="d-flex">
+                        <i class="bi bi-telephone-fill"></i>
+                        <p>Call Us: 1233455667, <br>  12234567, <br>  12345667</p>
+                    </div> <hr>
+                    <div class="d-flex">
+                        <i class="bi bi-envelope-fill"></i>
+                        <p>Email Us: abc@gmail.com</p>
+                    </div> <hr>
+                    <div class="d-flex">
+                        <i class="bi bi-browser-chrome"></i>
+                        <p>Website : Fusion It solution.com</p>
+                    </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--footer-->
+    <section class="py-5 mt-5 h-80">
+    <footer class="bg-light text-dark py-5 mt-5">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left">
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-info">About Us</h5>
+                    <hr class="mb-4">
+                    <p> Fusion IT with its dedicated teams render high quality IT solutions with professional management services of excellence, quality assurance & on time turnkey automation.</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-info">Business areas</h5>
+                    <hr class="mb-4">
+                    <p>
+                        <a href="#" class="text-dark" style="text-decoration: none;">Mobile Application Development</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-dark" style="text-decoration: none;">Web Application Development</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-dark" style="text-decoration: none;">IoT Software Development</a>
+                    </p>
+                  
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-info">Contact Us</h5>
+                    <hr class="mb-4">
+                    <p>
+                        <li class="fas fa-phone mr-4"> +88-012345667</li>
+                    </p>
+                    <p>
+                        <li class="fas fa-envelope mr-4">abc@gmail.com</li>
+                    </p>
+                    <p>
+                        <li class="fas fa-mobile mr-4">+88-012345667</li>
+                    </p>
+                  
+                </div>
+                <hr class="mb-4">
+                <div class="row d-flex justify-content-center">
+                    <div>
+                        <p>
+                            copyright 2023 All right reserve by:
+                            <a href="#" style="text-decoration: none;">
+                                <strong class="text-success">Fusion It Solution</strong>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="text-center">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                               <a href="#" class="text-dark"><li class="fab fa-facebook"></li></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="text-dark"><li class="fab fa-twitter"></li></a>
+                             </li>
+                             <li class="list-inline-item">
+                                <a href="#" class="text-dark"><li class="fab fa-google-plus"></li></a>
+                             </li>
+                             <li class="list-inline-item">
+                                <a href="#" class="text-dark"><li class="fab fa-linkedin-in"></li></a>
+                             </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+         
+    </footer>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+ 
+
+
+</body>
+
+</html>
